@@ -1,0 +1,12 @@
+{
+  "name": "shiftguard",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "install:all": "npm i && npm --prefix server i && npm --prefix client i"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

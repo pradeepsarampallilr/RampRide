@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html/body/#root must have a real height or every Leaflet map renders 0px tall. */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+/* Belt-and-suspenders: any .leaflet-container fills its parent even if a page forgets h-full. */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}

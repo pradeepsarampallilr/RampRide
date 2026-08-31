@@ -1,0 +1,1184 @@
+{
+  "office": {
+    "name": "HITEC City Hub",
+    "lat": 17.4435,
+    "lng": 78.3772
+  },
+  "users": [
+    {
+      "id": "U1",
+      "email": "admin@shiftguard.io",
+      "password": "demo123",
+      "role": "admin",
+      "name": "Priya Nair",
+      "refId": null
+    },
+    {
+      "id": "U2",
+      "email": "vendor@saitravels.io",
+      "password": "demo123",
+      "role": "vendor",
+      "name": "Farooq Ahmed",
+      "refId": "V1"
+    },
+    {
+      "id": "U3",
+      "email": "vendor@orbitfleet.io",
+      "password": "demo123",
+      "role": "vendor",
+      "name": "Meena Reddy",
+      "refId": "V2"
+    },
+    {
+      "id": "U4",
+      "email": "driver1@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Ramesh K",
+      "refId": "D1"
+    },
+    {
+      "id": "U5",
+      "email": "driver2@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Suresh B",
+      "refId": "D2"
+    },
+    {
+      "id": "U6",
+      "email": "driver3@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Venkat R",
+      "refId": "D3"
+    },
+    {
+      "id": "U7",
+      "email": "driver4@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Nagesh P",
+      "refId": "D4"
+    },
+    {
+      "id": "U8",
+      "email": "driver5@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Srinivas T",
+      "refId": "D5"
+    },
+    {
+      "id": "U9",
+      "email": "driver6@saitravels.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Bhaskar N",
+      "refId": "D6"
+    },
+    {
+      "id": "U10",
+      "email": "driver7@orbitfleet.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Yadagiri M",
+      "refId": "D7"
+    },
+    {
+      "id": "U11",
+      "email": "driver8@orbitfleet.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Chandra S",
+      "refId": "D8"
+    },
+    {
+      "id": "U12",
+      "email": "driver9@orbitfleet.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Prasad V",
+      "refId": "D9"
+    },
+    {
+      "id": "U13",
+      "email": "driver10@orbitfleet.io",
+      "password": "demo123",
+      "role": "driver",
+      "name": "Mahesh D",
+      "refId": "D10"
+    },
+    {
+      "id": "U14",
+      "email": "emp1@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Ramesh K",
+      "refId": "E1"
+    },
+    {
+      "id": "U15",
+      "email": "emp2@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Suresh B",
+      "refId": "E2"
+    },
+    {
+      "id": "U16",
+      "email": "emp3@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Anitha R",
+      "refId": "E3"
+    },
+    {
+      "id": "U17",
+      "email": "emp4@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sunitha K",
+      "refId": "E4"
+    },
+    {
+      "id": "U18",
+      "email": "emp5@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Divya P",
+      "refId": "E5"
+    },
+    {
+      "id": "U19",
+      "email": "emp6@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Kiran M",
+      "refId": "E6"
+    },
+    {
+      "id": "U20",
+      "email": "emp7@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Meera S",
+      "refId": "E7"
+    },
+    {
+      "id": "U21",
+      "email": "emp8@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Vijay N",
+      "refId": "E8"
+    },
+    {
+      "id": "U22",
+      "email": "emp9@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Arjun P",
+      "refId": "E9"
+    },
+    {
+      "id": "U23",
+      "email": "emp10@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Shalini K",
+      "refId": "E10"
+    },
+    {
+      "id": "U24",
+      "email": "emp11@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Naveen T",
+      "refId": "E11"
+    },
+    {
+      "id": "U25",
+      "email": "emp12@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Lakshmi N",
+      "refId": "E12"
+    },
+    {
+      "id": "U26",
+      "email": "emp13@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Priya T",
+      "refId": "E13"
+    },
+    {
+      "id": "U27",
+      "email": "emp14@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Swathi R",
+      "refId": "E14"
+    },
+    {
+      "id": "U28",
+      "email": "emp15@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Kavya M",
+      "refId": "E15"
+    },
+    {
+      "id": "U29",
+      "email": "emp16@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sandeep V",
+      "refId": "E16"
+    },
+    {
+      "id": "U30",
+      "email": "emp17@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Praveen D",
+      "refId": "E17"
+    },
+    {
+      "id": "U31",
+      "email": "emp18@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sneha J",
+      "refId": "E18"
+    },
+    {
+      "id": "U32",
+      "email": "emp19@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Deepika V",
+      "refId": "E19"
+    },
+    {
+      "id": "U33",
+      "email": "emp20@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Pooja S",
+      "refId": "E20"
+    },
+    {
+      "id": "U34",
+      "email": "emp21@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Ganesh R",
+      "refId": "E21"
+    },
+    {
+      "id": "U35",
+      "email": "emp22@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Vinay K",
+      "refId": "E22"
+    },
+    {
+      "id": "U36",
+      "email": "emp23@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Radhika B",
+      "refId": "E23"
+    },
+    {
+      "id": "U37",
+      "email": "emp24@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Nikitha G",
+      "refId": "E24"
+    },
+    {
+      "id": "U38",
+      "email": "emp25@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Harshitha P",
+      "refId": "E25"
+    },
+    {
+      "id": "U39",
+      "email": "emp26@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Ashok M",
+      "refId": "E26"
+    },
+    {
+      "id": "U40",
+      "email": "emp27@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Ravi T",
+      "refId": "E27"
+    },
+    {
+      "id": "U41",
+      "email": "emp28@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Manoj S",
+      "refId": "E28"
+    },
+    {
+      "id": "U42",
+      "email": "emp29@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sowmya K",
+      "refId": "E29"
+    },
+    {
+      "id": "U43",
+      "email": "emp30@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Vandana R",
+      "refId": "E30"
+    },
+    {
+      "id": "U44",
+      "email": "emp31@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Keerthi S",
+      "refId": "E31"
+    },
+    {
+      "id": "U45",
+      "email": "emp32@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Manasa D",
+      "refId": "E32"
+    },
+    {
+      "id": "U46",
+      "email": "emp33@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Rachana T",
+      "refId": "E33"
+    },
+    {
+      "id": "U47",
+      "email": "emp34@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Karthik N",
+      "refId": "E34"
+    },
+    {
+      "id": "U48",
+      "email": "emp35@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sunil P",
+      "refId": "E35"
+    },
+    {
+      "id": "U49",
+      "email": "emp36@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Ishitha M",
+      "refId": "E36"
+    },
+    {
+      "id": "U50",
+      "email": "emp37@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Deepak R",
+      "refId": "E37"
+    },
+    {
+      "id": "U51",
+      "email": "emp38@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Anil K",
+      "refId": "E38"
+    },
+    {
+      "id": "U52",
+      "email": "emp39@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Bhavana L",
+      "refId": "E39"
+    },
+    {
+      "id": "U53",
+      "email": "emp40@corp.io",
+      "password": "demo123",
+      "role": "employee",
+      "name": "Sindhu R",
+      "refId": "E40"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "V1",
+      "name": "Sai Travels",
+      "contact": "+91 90000 00001"
+    },
+    {
+      "id": "V2",
+      "name": "Orbit Fleet",
+      "contact": "+91 90000 00002"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "VH1",
+      "vendorId": "V1",
+      "plate": "TS09 AB 1111",
+      "capacity": 4,
+      "type": "Sedan",
+      "status": "available"
+    },
+    {
+      "id": "VH2",
+      "vendorId": "V1",
+      "plate": "TS09 AC 1222",
+      "capacity": 4,
+      "type": "Sedan",
+      "status": "available"
+    },
+    {
+      "id": "VH3",
+      "vendorId": "V1",
+      "plate": "TS09 AD 1333",
+      "capacity": 4,
+      "type": "Sedan",
+      "status": "available"
+    },
+    {
+      "id": "VH4",
+      "vendorId": "V1",
+      "plate": "TS09 AE 1444",
+      "capacity": 6,
+      "type": "SUV",
+      "status": "available"
+    },
+    {
+      "id": "VH5",
+      "vendorId": "V1",
+      "plate": "TS09 AF 1555",
+      "capacity": 6,
+      "type": "SUV",
+      "status": "available"
+    },
+    {
+      "id": "VH6",
+      "vendorId": "V1",
+      "plate": "TS09 BA 1666",
+      "capacity": 12,
+      "type": "Tempo Traveller",
+      "status": "available"
+    },
+    {
+      "id": "VH7",
+      "vendorId": "V2",
+      "plate": "TS09 BC 1777",
+      "capacity": 4,
+      "type": "Sedan",
+      "status": "available"
+    },
+    {
+      "id": "VH8",
+      "vendorId": "V2",
+      "plate": "TS09 BD 1888",
+      "capacity": 6,
+      "type": "SUV",
+      "status": "available"
+    },
+    {
+      "id": "VH9",
+      "vendorId": "V2",
+      "plate": "TS09 BE 1999",
+      "capacity": 6,
+      "type": "SUV",
+      "status": "available"
+    },
+    {
+      "id": "VH10",
+      "vendorId": "V2",
+      "plate": "TS09 BF 2110",
+      "capacity": 12,
+      "type": "Tempo Traveller",
+      "status": "available"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "D1",
+      "vendorId": "V1",
+      "name": "Ramesh K",
+      "phone": "+91 98480 11111",
+      "licenseNo": "TS0120180001",
+      "vehicleId": "VH1",
+      "status": "available"
+    },
+    {
+      "id": "D2",
+      "vendorId": "V1",
+      "name": "Suresh B",
+      "phone": "+91 98480 11122",
+      "licenseNo": "TS0120180002",
+      "vehicleId": "VH2",
+      "status": "available"
+    },
+    {
+      "id": "D3",
+      "vendorId": "V1",
+      "name": "Venkat R",
+      "phone": "+91 98480 11133",
+      "licenseNo": "TS0120180003",
+      "vehicleId": "VH3",
+      "status": "available"
+    },
+    {
+      "id": "D4",
+      "vendorId": "V1",
+      "name": "Nagesh P",
+      "phone": "+91 98480 11144",
+      "licenseNo": "TS0120180004",
+      "vehicleId": "VH4",
+      "status": "available"
+    },
+    {
+      "id": "D5",
+      "vendorId": "V1",
+      "name": "Srinivas T",
+      "phone": "+91 98480 11155",
+      "licenseNo": "TS0120180005",
+      "vehicleId": "VH5",
+      "status": "available"
+    },
+    {
+      "id": "D6",
+      "vendorId": "V1",
+      "name": "Bhaskar N",
+      "phone": "+91 98480 11166",
+      "licenseNo": "TS0120180006",
+      "vehicleId": "VH6",
+      "status": "available"
+    },
+    {
+      "id": "D7",
+      "vendorId": "V2",
+      "name": "Yadagiri M",
+      "phone": "+91 98480 11177",
+      "licenseNo": "TS0120180007",
+      "vehicleId": "VH7",
+      "status": "available"
+    },
+    {
+      "id": "D8",
+      "vendorId": "V2",
+      "name": "Chandra S",
+      "phone": "+91 98480 11188",
+      "licenseNo": "TS0120180008",
+      "vehicleId": "VH8",
+      "status": "available"
+    },
+    {
+      "id": "D9",
+      "vendorId": "V2",
+      "name": "Prasad V",
+      "phone": "+91 98480 11199",
+      "licenseNo": "TS0120180009",
+      "vehicleId": "VH9",
+      "status": "available"
+    },
+    {
+      "id": "D10",
+      "vendorId": "V2",
+      "name": "Mahesh D",
+      "phone": "+91 98480 11210",
+      "licenseNo": "TS0120180010",
+      "vehicleId": "VH10",
+      "status": "available"
+    }
+  ],
+  "shifts": [
+    {
+      "id": "S1",
+      "label": "Night Logout 22:30",
+      "time": "22:30",
+      "direction": "logout",
+      "isNight": true
+    },
+    {
+      "id": "S2",
+      "label": "Morning Login 06:00",
+      "time": "06:00",
+      "direction": "login",
+      "isNight": true
+    },
+    {
+      "id": "S3",
+      "label": "Day Login 09:30",
+      "time": "09:30",
+      "direction": "login",
+      "isNight": false
+    },
+    {
+      "id": "S4",
+      "label": "Evening Logout 18:30",
+      "time": "18:30",
+      "direction": "logout",
+      "isNight": false
+    }
+  ],
+  "employees": [
+    {
+      "id": "E1",
+      "name": "Ramesh K",
+      "gender": "M",
+      "email": "emp1@corp.io",
+      "phone": "+91 99999 00001",
+      "address": "Kukatpally, Hyderabad",
+      "lat": 17.481787,
+      "lng": 78.424254,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E2",
+      "name": "Suresh B",
+      "gender": "M",
+      "email": "emp2@corp.io",
+      "phone": "+91 99999 00002",
+      "address": "Kukatpally, Hyderabad",
+      "lat": 17.482733,
+      "lng": 78.401843,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E3",
+      "name": "Anitha R",
+      "gender": "F",
+      "email": "emp3@corp.io",
+      "phone": "+91 99999 00003",
+      "address": "Kukatpally, Hyderabad",
+      "lat": 17.487298,
+      "lng": 78.405081,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E4",
+      "name": "Sunitha K",
+      "gender": "F",
+      "email": "emp4@corp.io",
+      "phone": "+91 99999 00004",
+      "address": "Kukatpally, Hyderabad",
+      "lat": 17.492327,
+      "lng": 78.425054,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E5",
+      "name": "Divya P",
+      "gender": "F",
+      "email": "emp5@corp.io",
+      "phone": "+91 99999 00005",
+      "address": "Plot 12, near the big tree",
+      "lat": null,
+      "lng": null,
+      "shiftId": "S1",
+      "addressValid": false
+    },
+    {
+      "id": "E6",
+      "name": "Kiran M",
+      "gender": "M",
+      "email": "emp6@corp.io",
+      "phone": "+91 99999 00006",
+      "address": "Kukatpally, Hyderabad",
+      "lat": 17.484377,
+      "lng": 78.410817,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E7",
+      "name": "Meera S",
+      "gender": "F",
+      "email": "emp7@corp.io",
+      "phone": "+91 99999 00007",
+      "address": "Gachibowli, Hyderabad",
+      "lat": 17.429611,
+      "lng": 78.358026,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E8",
+      "name": "Vijay N",
+      "gender": "M",
+      "email": "emp8@corp.io",
+      "phone": "+91 99999 00008",
+      "address": "Gachibowli, Hyderabad",
+      "lat": 17.43462,
+      "lng": 78.338899,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E9",
+      "name": "Arjun P",
+      "gender": "M",
+      "email": "emp9@corp.io",
+      "phone": "+91 99999 00009",
+      "address": "Gachibowli, Hyderabad",
+      "lat": 17.435774,
+      "lng": 78.343024,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E10",
+      "name": "Shalini K",
+      "gender": "F",
+      "email": "emp10@corp.io",
+      "phone": "+91 99999 00010",
+      "address": "Shamirpet, Hyderabad",
+      "lat": 17.61,
+      "lng": 78.56,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E11",
+      "name": "Naveen T",
+      "gender": "M",
+      "email": "emp11@corp.io",
+      "phone": "+91 99999 00011",
+      "address": "Gachibowli, Hyderabad",
+      "lat": 17.431065,
+      "lng": 78.348757,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E12",
+      "name": "Lakshmi N",
+      "gender": "F",
+      "email": "emp12@corp.io",
+      "phone": "+91 99999 00012",
+      "address": "Miyapur, Hyderabad",
+      "lat": 17.501903,
+      "lng": 78.361046,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E13",
+      "name": "Priya T",
+      "gender": "F",
+      "email": "emp13@corp.io",
+      "phone": "+91 99999 00013",
+      "address": "Miyapur, Hyderabad",
+      "lat": 17.494614,
+      "lng": 78.346717,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E14",
+      "name": "Swathi R",
+      "gender": "F",
+      "email": "emp14@corp.io",
+      "phone": "+91 99999 00014",
+      "address": "Miyapur, Hyderabad",
+      "lat": 17.507843,
+      "lng": 78.349556,
+      "shiftId": "S1",
+      "addressValid": true
+    },
+    {
+      "id": "E15",
+      "name": "Kavya M",
+      "gender": "F",
+      "email": "emp15@corp.io",
+      "phone": "+91 99999 00015",
+      "address": "Miyapur, Hyderabad",
+      "lat": 17.505636,
+      "lng": 78.352395,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E16",
+      "name": "Sandeep V",
+      "gender": "M",
+      "email": "emp16@corp.io",
+      "phone": "+91 99999 00016",
+      "address": "Miyapur, Hyderabad",
+      "lat": 17.506567,
+      "lng": 78.368381,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E17",
+      "name": "Praveen D",
+      "gender": "M",
+      "email": "emp17@corp.io",
+      "phone": "+91 99999 00017",
+      "address": "Ameerpet, Hyderabad",
+      "lat": 17.437948,
+      "lng": 78.445449,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E18",
+      "name": "Sneha J",
+      "gender": "F",
+      "email": "emp18@corp.io",
+      "phone": "+91 99999 00018",
+      "address": "Ameerpet, Hyderabad",
+      "lat": 17.426168,
+      "lng": 78.438969,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E19",
+      "name": "Deepika V",
+      "gender": "F",
+      "email": "emp19@corp.io",
+      "phone": "+91 99999 00019",
+      "address": "Ameerpet, Hyderabad",
+      "lat": 17.436917,
+      "lng": 78.456459,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E20",
+      "name": "Pooja S",
+      "gender": "F",
+      "email": "emp20@corp.io",
+      "phone": "+91 99999 00020",
+      "address": "Colaba, Mumbai (mismapped address)",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "shiftId": "S2",
+      "addressValid": false
+    },
+    {
+      "id": "E21",
+      "name": "Ganesh R",
+      "gender": "M",
+      "email": "emp21@corp.io",
+      "phone": "+91 99999 00021",
+      "address": "Ameerpet, Hyderabad",
+      "lat": 17.431713,
+      "lng": 78.457639,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E22",
+      "name": "Vinay K",
+      "gender": "M",
+      "email": "emp22@corp.io",
+      "phone": "+91 99999 00022",
+      "address": "Kondapur, Hyderabad",
+      "lat": 17.464122,
+      "lng": 78.361944,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E23",
+      "name": "Radhika B",
+      "gender": "F",
+      "email": "emp23@corp.io",
+      "phone": "+91 99999 00023",
+      "address": "Kondapur, Hyderabad",
+      "lat": 17.457333,
+      "lng": 78.368588,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E24",
+      "name": "Nikitha G",
+      "gender": "F",
+      "email": "emp24@corp.io",
+      "phone": "+91 99999 00024",
+      "address": "Kondapur, Hyderabad",
+      "lat": 17.467779,
+      "lng": 78.375199,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E25",
+      "name": "Harshitha P",
+      "gender": "F",
+      "email": "emp25@corp.io",
+      "phone": "+91 99999 00025",
+      "address": "Kondapur, Hyderabad",
+      "lat": 17.462694,
+      "lng": 78.375251,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E26",
+      "name": "Ashok M",
+      "gender": "M",
+      "email": "emp26@corp.io",
+      "phone": "+91 99999 00026",
+      "address": "Kondapur, Hyderabad",
+      "lat": 17.453557,
+      "lng": 78.369972,
+      "shiftId": "S2",
+      "addressValid": true
+    },
+    {
+      "id": "E27",
+      "name": "Ravi T",
+      "gender": "M",
+      "email": "emp27@corp.io",
+      "phone": "+91 99999 00027",
+      "address": "Manikonda, Hyderabad",
+      "lat": 17.408144,
+      "lng": 78.380563,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E28",
+      "name": "Manoj S",
+      "gender": "M",
+      "email": "emp28@corp.io",
+      "phone": "+91 99999 00028",
+      "address": "Manikonda, Hyderabad",
+      "lat": 17.395337,
+      "lng": 78.377081,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E29",
+      "name": "Sowmya K",
+      "gender": "F",
+      "email": "emp29@corp.io",
+      "phone": "+91 99999 00029",
+      "address": "Manikonda, Hyderabad",
+      "lat": 17.405781,
+      "lng": 78.375062,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E30",
+      "name": "Vandana R",
+      "gender": "F",
+      "email": "emp30@corp.io",
+      "phone": "+91 99999 00030",
+      "address": "Manikonda, Hyderabad",
+      "lat": 17.412565,
+      "lng": 78.396941,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E31",
+      "name": "Keerthi S",
+      "gender": "F",
+      "email": "emp31@corp.io",
+      "phone": "+91 99999 00031",
+      "address": "Secunderabad, Hyderabad",
+      "lat": 17.445857,
+      "lng": 78.509626,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E32",
+      "name": "Manasa D",
+      "gender": "F",
+      "email": "emp32@corp.io",
+      "phone": "+91 99999 00032",
+      "address": "Secunderabad, Hyderabad",
+      "lat": 17.441068,
+      "lng": 78.496442,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E33",
+      "name": "Rachana T",
+      "gender": "F",
+      "email": "emp33@corp.io",
+      "phone": "+91 99999 00033",
+      "address": "near the water tank, Uppal (unmapped)",
+      "lat": "N/A",
+      "lng": "N/A",
+      "shiftId": "S3",
+      "addressValid": false
+    },
+    {
+      "id": "E34",
+      "name": "Karthik N",
+      "gender": "M",
+      "email": "emp34@corp.io",
+      "phone": "+91 99999 00034",
+      "address": "Secunderabad, Hyderabad",
+      "lat": 17.433616,
+      "lng": 78.491474,
+      "shiftId": "S3",
+      "addressValid": true
+    },
+    {
+      "id": "E35",
+      "name": "Sunil P",
+      "gender": "M",
+      "email": "emp35@corp.io",
+      "phone": "+91 99999 00035",
+      "address": "LB Nagar, Hyderabad",
+      "lat": 17.343038,
+      "lng": 78.555106,
+      "shiftId": "S4",
+      "addressValid": true
+    },
+    {
+      "id": "E36",
+      "name": "Ishitha M",
+      "gender": "F",
+      "email": "emp36@corp.io",
+      "phone": "+91 99999 00036",
+      "address": "LB Nagar, Hyderabad",
+      "lat": 17.340897,
+      "lng": 78.548876,
+      "shiftId": "S4",
+      "addressValid": true
+    },
+    {
+      "id": "E37",
+      "name": "Deepak R",
+      "gender": "M",
+      "email": "emp37@corp.io",
+      "phone": "+91 99999 00037",
+      "address": "LB Nagar, Hyderabad",
+      "lat": 17.351212,
+      "lng": 78.549896,
+      "shiftId": "S4",
+      "addressValid": true
+    },
+    {
+      "id": "E38",
+      "name": "Anil K",
+      "gender": "M",
+      "email": "emp38@corp.io",
+      "phone": "+91 99999 00038",
+      "address": "Uppal, Hyderabad",
+      "lat": 17.396089,
+      "lng": 78.560183,
+      "shiftId": "S4",
+      "addressValid": true
+    },
+    {
+      "id": "E39",
+      "name": "Bhavana L",
+      "gender": "F",
+      "email": "emp39@corp.io",
+      "phone": "+91 99999 00039",
+      "address": "Uppal, Hyderabad",
+      "lat": 17.397218,
+      "lng": 78.567039,
+      "shiftId": "S4",
+      "addressValid": true
+    },
+    {
+      "id": "E40",
+      "name": "Sindhu R",
+      "gender": "F",
+      "email": "emp40@corp.io",
+      "phone": "+91 99999 00040",
+      "address": "Uppal, Hyderabad",
+      "lat": 17.407291,
+      "lng": 78.569147,
+      "shiftId": "S4",
+      "addressValid": true
+    }
+  ],
+  "routes": [],
+  "alerts": [
+    {
+      "id": "A1",
+      "type": "invalid_address",
+      "severity": "high",
+      "employeeId": "E5",
+      "employeeName": "Divya P",
+      "shiftId": "S1",
+      "message": "Coordinates missing or outside Hyderabad service area",
+      "rawAddress": "Plot 12, near the big tree",
+      "status": "open",
+      "createdAt": "2026-08-31T09:00:00.000Z",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null
+    },
+    {
+      "id": "A2",
+      "type": "invalid_address",
+      "severity": "high",
+      "employeeId": "E20",
+      "employeeName": "Pooja S",
+      "shiftId": "S2",
+      "message": "Coordinates missing or outside Hyderabad service area",
+      "rawAddress": "Colaba, Mumbai (mismapped address)",
+      "status": "open",
+      "createdAt": "2026-08-31T09:00:00.000Z",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null
+    },
+    {
+      "id": "A3",
+      "type": "invalid_address",
+      "severity": "high",
+      "employeeId": "E33",
+      "employeeName": "Rachana T",
+      "shiftId": "S3",
+      "message": "Coordinates missing or outside Hyderabad service area",
+      "rawAddress": "near the water tank, Uppal (unmapped)",
+      "status": "open",
+      "createdAt": "2026-08-31T09:00:00.000Z",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null
+    }
+  ],
+  "trips": [],
+  "meta": {
+    "lastGeneratedAt": null,
+    "version": 1
+  }
+}
