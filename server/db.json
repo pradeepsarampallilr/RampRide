@@ -449,7 +449,7 @@
       "plate": "TS09 AB 1111",
       "capacity": 4,
       "type": "Sedan",
-      "status": "available"
+      "status": "assigned"
     },
     {
       "id": "VH2",
@@ -532,7 +532,7 @@
       "phone": "+91 98480 11111",
       "licenseNo": "TS0120180001",
       "vehicleId": "VH1",
-      "status": "available"
+      "status": "assigned"
     },
     {
       "id": "D2",
@@ -1128,7 +1128,307 @@
       "addressValid": true
     }
   ],
-  "routes": [],
+  "routes": [
+    {
+      "id": "R-S1-01",
+      "shiftId": "S1",
+      "direction": "logout",
+      "status": "planned",
+      "vendorId": null,
+      "driverId": null,
+      "vehicleId": null,
+      "capacity": 4,
+      "stops": [
+        {
+          "seq": 1,
+          "employeeId": "E10",
+          "name": "Shalini K",
+          "gender": "F",
+          "lat": 17.61,
+          "lng": 78.56,
+          "address": "Shamirpet, Hyderabad",
+          "pin": "5376",
+          "etaMin": 47,
+          "etaClock": "23:17",
+          "status": "pending",
+          "escortRequired": true,
+          "verifiedAt": null
+        }
+      ],
+      "geometry": "{|miBo`k}MLA@?J?|AApDCN?n@?r@AZUVAr@ArDG?rA{DAw@?S?U[yC@{DBw@@Q?u@BA?qAAE?Q?S?OAOAa@EeBOsBOSCOAQCKCOE]KwAs@]Qi@Wa@U_@SWOoB_Ba@YWM]OUISGSEWEiDe@YGOCGACAOG[GQGQMIGEGKK_BmCU_@Yi@GKOUOSQSy@w@qCcCc@_@k@q@MKg@_@qCsAGA_FoAaAYUGIEIGqCo@qBc@]E}Eo@KAq@Is@KcD]sAScAK{@K_CYWAc@ESAkAEm@As@AC?iAGuBIyAKgAIm@Gs@KyCe@gGaAgO_CaC_@{Ce@aBUgDs@KCcA[k@Se@QkDqAs@Ys@Ys@_@o@]}BuAsBuAeBgAOK[Sc@OeAUo@KY?gABa@BsAX{Ab@_AXSBe@Li@LqBf@KN]Jm@N{@Lu@FcA?u@Cq@Gi@Gc@G{@[CA_@Ko@Ss@UYIKDI?K?IEIGGKCKUIOGcBi@c@OwAc@kA_@_DeAq@U[K]M{GqBkBk@eA]{Aa@iBk@e@OkC{@a@SYU}HeCcF_By@UcBe@[Ig@OSGWIICc@`BGRIPEFGDGXQn@]`A{BrDU`@i@z@e@|@g@vAGTKj@Ix@WtCA`@_@pGI|@C\\ALe@dHMhBCTAPUtCg@ENoBFw@^oFVqDJ_A\\kFW_A}Cj@u@NcATkATG@}@PUDOBo@Ls@NODuAXE?ODkAXQFg@Nq@\\IFKFu@`@EBOLC@i@Z[PqCdBEBu@`@OHg@VWNwBnAQFIBmBn@c@NMB}A`@uAb@gBh@kD`AE@eCx@{AVe@HIB]DMBwATmEx@SBa@JuAVuAV_@HMHGHUX_@l@KLKNQXQVMNMFe@R}@TOFw@Vo@TqA`@oA`@OHm@d@MLQ\\MZYp@O^i@z@m@`AaAtAGHMPiA~AeA`BsA~Ac@`@]\\MJm@z@QVqAnBo@bAKRSZc@l@Yb@U^W^o@x@YVWPc@VYNm@VODC?IBW@g@AM?yCQ_@?KBOHSRMNi@|@ILGHKRMPk@~@STQNcBnASVABMZKTEXAZ@JBLLd@r@pBJ`@DZ?L?JAZYr@ENO\\Q^GVGNEHOPSR[Ru@\\]PSHm@`@_@^OPi@v@]v@A@CJSp@Ur@[x@Uj@kA|Bw@rBWv@K\\IVGNSTGFIFKDM?M?{BOsCImC@uD@e@?G?eCDo@@m@@Q?gEBe@Fk@Lo@Pe@LsA`@cD`Ac@N}Ad@gBh@G?ID{Aj@{@\\gBn@OBO@MASA]Ic@ImAMU?MCSCYEQAI@M@?RDZRd@`@lAg@Ra@sAK_@C{@S@sDPoFVqER_DPaCJuCf@gBb@]HaAZWHq@Rs@Te@NYJ_Cz@i@NGBgATa@HeAJ}ANG@eALS@kBHcAEeAIm@IwEi@qAKgASs@[i@_@[S]WaA]GCMI_A]}@SI?yAYe@MEIMCm@M_B]sA[aASm@s@Q]O]Sa@MWg@{Ai@{Aw@iA]YII{@u@YUKKOOKMMQW_@FeC_AGgBEQBVmE@UVwDB]?CZwDZoAXmGBw@Bu@@w@@y@?w@Aw@Cw@Eu@Iw@Iw@Ku@Mu@Ic@Ia@Me@Me@M_@M_@Wq@Wo@[q@]m@]m@_@m@SYMQc@k@e@g@e@g@i@e@g@a@i@a@k@_@k@_@m@]m@[m@[o@[{Au@cj@sWUM]Qe@U}Ay@{Ay@yA}@yA_AwAaAwAeAsAcAuAiAoAgAoAkAoAoAkAoAkAqAiAsAgAuAwOsSU[gBaCoEaGgAuAqYk_@KOcFwGcAuAc@k@a@k@eAwAaAwA_AyA_AyA}@{A}@{A{@}Ay@}Ai@cAm@kAu@aBw@aBKSO]Yo@e@kAYu@{@yBGMe@uA]aAOc@e@wAq@uB}HkWGSgSsp@uAoEwAoEa@oAOc@c@wAwAkE}AkEsWes@O_@_@eAk@gBi@iBc@iB_@iB]kB[mBUkBQqBOoBKuBEkBC}A?WAmBBoBFqBJoBNoBNmB|IicABWfFwl@BWrBoVRaCH}@Dg@RoBTmBXoB~AoKvCqRLy@r@cFr@{EdBeLfEcYf@cDLw@t@{ELy@PkAD[T}ABM^aCJu@Hc@RwAj@sDbAsGZmB^mBPs@d@iBh@gBtAiEdAaDHUlGoRdD_KRs@Rq@Ru@Pw@Ns@Lu@Ju@Jw@Hu@Fu@fGoy@De@bNmiBDi@tDcg@PoBPoBVmBVoBZkBZiB`@mB`@gBd@iBf@iBhRko@lVuy@FSxBoHbGiSRs@Rs@Rs@Rs@Ps@F[H[Nw@Lu@Lu@Lu@BWGaA?a@BiAMk@]Ya@Ig@D_@TWj@@j@Pb@TPRFRFnDh@ZDX?ZCXIVKTQRSPUNYLYl@cAp@gADUFUJURa@La@Di@Ic@M[[WyAs@sAy@e@OsFk@uBS{@?IHMFM@C?E?EAEACCKIEKCKi@Kk@Iu@Ia@GI?AAkAK]Em@Ai@?a@@W@YB]FUFi@L_DbAg@NeBl@eFdBcIhCiOdFyEfBs@Vq@TaDfAcA\\aA\\oE|AkExAC@QDk@LeALu@JmAJCROr@e@`CADk@bBaA|CeAvBeBpDUf@Of@u@lCi@|DYpEM|AGh@Iz@S`CIfPB`AH~BBh@@x@Al@@ZGhDKr@g@vBSj@GPm@tBg@dBQj@Qn@AFKf@Mj@Kn@Gn@CHEVWdA]lAMZONYViAr@wI{BMM}@_AKC}Fz@IAcAoAKC_@M_Bi@EEbAiFf@mCbAsFv@gEPcAHk@??Ij@QbAw@fEcArFg@lCcAhFDD~Ah@^LJBbAnAH@|F{@JB|@~@LLvIzBhAs@XWNOL[\\mAVeADWBIFo@Jo@Lk@Jg@@GPo@Pk@f@eBl@uBFQRk@f@wBJs@FiDA[@m@Ay@Ci@I_CCaAHgPRaCH{@Fi@L}AXqEh@}Dt@mCNg@Tg@dBqDdAwB`A}Cj@cB@Ed@aCNs@BSASrAIp@Ip@Kh@Kd@KhEyAtFmBxHmCnAc@zDwA|N_FfFeBjKkDf@Qb@O`DaAj@QTE^GXEXA`@Aj@?n@@T@~AHXB|@Fr@Hd@DFGHGJAFAD?F@F@JHHJhBTbEd@xCLz@Ap@Of@]p@i@h@Ml@C`@N\\ZP\\Bd@Ep@UfAe@fBc@|As@dAKRKRITo@fAo@dAM\\OZQVQTiCtB}@hAm@dASh@{@xASt@Sr@Sp@IXIXkJl[Qj@GTwi@`jBg@fBe@fBa@hB_@jB]fBYjBYlBUlBQnBQlBsD~f@Gl@cNliBEd@_Eli@gA`OGv@It@Kx@Mv@Mt@Ot@Qv@St@Sr@Ur@cD~JmGnRIToBbGm@hBg@bBe@hBOr@_@jB[jBkBvLUvAU|Aa@jCCNU|AYfBKv@u@|E[lBUxACR_@bCyFx_@SjAs@zEs@bFMx@wCpRaBnKWlBUlBSlBKlAS`CwBfWCVgFvl@CV}IhcAOlBOnBIlBGnBCnB?jB@V@xAFlBJpBLnBRnBTjBXjBZjB`@fB`@fBh@hBj@dB\\`AN`@tWds@zAlExAjE`@pARp@^hAHRlAxDtApEfSrp@FR`AbDzFfRj@dBj@dBj@dBFNlAbDPb@Xt@Rd@Rh@Xn@Zn@lBbE\\p@HNf@bA~@dBh@~@P\\|@zA|@xA|@xA`AxA~@vAdAvAbAtAdAvAb@h@~DjFJNpYl_@fAtAvH`KTXvOtSfAtAfApAjApAjAnAlAlAlAjApAfArAfArAdAvAbAtA`AxA~@xAz@xAx@|Ax@`@R`@RTL`j@rW|At@n@Zl@\\n@Zl@\\l@^h@`@j@`@f@b@j@f@f@f@b@f@f@l@LPRZ`@l@\\l@\\n@\\p@Xr@Vp@L`@L`@Lb@Ld@Jb@Hb@Lv@Jv@Hv@Hx@Dx@Bv@@x@?v@Ax@Ax@Cv@Cv@WjGLjBAvB?n@?X?TGzCAp@@f@DNLNVRI~AGdCV^LPJLNNJJXTz@t@HH\\Xv@hAh@zAf@zALVR`@N\\P\\l@r@`ARrAZ~A\\l@LLBF?r@PjAVFF|@R~@\\P?FB`AZdAt@`@Vn@VxGv@tARl@F|@BjAJpBKtAM~AObAM`@GpAWh@M|B{@XKd@QDCn@QfA[jA_@TGdBc@~@UvAU|CQ`CKLArAGl@?DAN?PC\\AJAhBI|AIZCdBK`BOJ}@Ls@Jg@j@LMf@]|@Gb@f@A~@NRLlALb@H\\HR@L@NANCfBo@z@]zAk@HEDIfBk@hC{@zCy@tAa@rAa@l@Md@EfECbHSpCAb@@nCBjCF`BNb@DLAHAB?LGJMPYTw@V{@x@qBjA}BTm@X{@To@Ts@BK^y@j@w@LQ`@a@l@a@NI`@Qx@a@VMLMBEHKJOFSFSP_@L_@FM@ERq@@M?a@CWKa@k@sAGQCIOe@?MAM?U@QBIL_@Tg@LSLMRQv@g@VQXYp@cANULSf@{@Xc@LQNKJCLCLAh@B~AL|@DR@FANAd@MnAm@x@i@NQrCgEr@gAdCyDT]LS^c@LKXULI\\]dAuA|@mAb@q@l@y@v@iA`@k@BEPWZi@NWHOFQXs@Pc@P[XYb@[RI^MdA]v@Wn@U`@OPEBAnA_@d@OPMXa@\\e@JO\\k@T[FINKFAfFeAhASbAQhASrAW\\EFATEp@OB?v@QRE`Bg@xEwAjBi@xBq@lA_@jCq@JCZKbBgAtAu@|@i@^U|CgBZQ|@k@XSdBw@PIhAUlBa@~EeAhAS|Bg@~@OzA]TQP[TiC\\wBd@uAL]PYXg@^o@Zc@hBsD`@eA~@_EJk@BORkAXcBPiABOf@_DFSf@}ALC@???B?@@DB@@B@@@q@zB_@nCSnAG\\FHBJCPSvAAPDHL^n@Vb@LpA^\\Jt@TnA`@bAX\\Jp@TdBj@fBn@XJ^Lb@NV?RFbAVNDTHrA`@jA`@`D`ArC|@`Cv@nEtAVHRH~@Z~@Zh@PRFjA\\\\Lz@Vx@XVJxAb@JEJCJ?HBHDBDBDBD@FPF^LLDPFf@Nb@LXJjAXf@HB?^Br@Bp@?n@Ed@G`@IP?R@JC`Dy@PE`GyAv@Ov@Gl@?p@@r@Jn@Np@Xh@VJF~B`B~DhCLFlAl@xAp@NDvDxAn@Vp@T|@TB@dDp@lBZnC`@~B\\lO~BbGdAzCd@v@Hf@FfAHzAJdADh@BnAB`BFnADjAJrBR|@JxFn@f@FhANfEj@dDf@dCj@vAXFCH?PBRBz@Rh@LhCl@pBr@PHf@Vx@`@NHr@t@b@`@fAjA~ArAh@b@PNPRPRNXHLXf@R^FHbBvCLNHLZPVDj@JnEl@TH\\H`Ad@TLFFJHLHr@p@RRRRTNRLn@\\`@Pf@Xf@VVLNFPFPBRDRBT@f@B\\DVB\\BpALXDX@V@V@Z?dBAX?@?",
+      "distanceKm": 94.41980000000001,
+      "durationMin": 91.81333333333333,
+      "straightLineKm": 53.6,
+      "flags": {
+        "isNight": true,
+        "escortRequired": true,
+        "reorderedForSafety": false
+      },
+      "createdAt": "2026-08-31T10:30:47.265Z",
+      "startedAt": null,
+      "completedAt": null,
+      "currentSeq": 1,
+      "lastLocation": null
+    },
+    {
+      "id": "R-S1-02",
+      "shiftId": "S1",
+      "direction": "logout",
+      "status": "planned",
+      "vendorId": null,
+      "driverId": null,
+      "vehicleId": null,
+      "capacity": 6,
+      "stops": [
+        {
+          "seq": 1,
+          "employeeId": "E12",
+          "name": "Lakshmi N",
+          "gender": "F",
+          "lat": 17.501903,
+          "lng": 78.361046,
+          "address": "Miyapur, Hyderabad",
+          "pin": "4412",
+          "etaMin": 14,
+          "etaClock": "22:44",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 2,
+          "employeeId": "E4",
+          "name": "Sunitha K",
+          "gender": "F",
+          "lat": 17.492327,
+          "lng": 78.425054,
+          "address": "Kukatpally, Hyderabad",
+          "pin": "5546",
+          "etaMin": 29,
+          "etaClock": "22:59",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 3,
+          "employeeId": "E6",
+          "name": "Kiran M",
+          "gender": "M",
+          "lat": 17.484377,
+          "lng": 78.410817,
+          "address": "Kukatpally, Hyderabad",
+          "pin": "6902",
+          "etaMin": 36,
+          "etaClock": "23:06",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 4,
+          "employeeId": "E3",
+          "name": "Anitha R",
+          "gender": "F",
+          "lat": 17.487298,
+          "lng": 78.405081,
+          "address": "Kukatpally, Hyderabad",
+          "pin": "6411",
+          "etaMin": 38,
+          "etaClock": "23:08",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 5,
+          "employeeId": "E1",
+          "name": "Ramesh K",
+          "gender": "M",
+          "lat": 17.481787,
+          "lng": 78.424254,
+          "address": "Kukatpally, Hyderabad",
+          "pin": "5113",
+          "etaMin": 46,
+          "etaClock": "23:16",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        }
+      ],
+      "geometry": "{|miBo`k}MLA@?J?|AApDCN?n@?r@AZUVAr@ArDG?rA{DAw@?S?U[yC@{DBw@@Q?u@BA?qAAE?Q?S?OAOAa@EeBOsBOSCOAQCKCOE]KwAs@]Qi@Wa@U_@SWOoB_Ba@YWM]OUISGSEWEiDe@YGOCGACAOG[GQGQMIGEGKK_BmCU_@Yi@GKOUOSQSy@w@qCcCc@_@k@q@MKg@_@qCsAGA_FoAaAYUGIEIGqCo@qBc@]E}Eo@KAq@Is@KcD]sAScAK{@K_CYWAc@ESAkAEm@As@AC?iAGuBIyAKgAIm@Gs@KyCe@gGaAgO_CaC_@{Ce@aBUgDs@KCcA[k@Se@QkDqAs@Ys@Ys@_@o@]}BuAsBuAeBgAOK[Sc@OeAUo@KY?gABa@BsAX{Ab@_AXSBe@Li@LqBf@KN]Jm@N{@Lu@FcA?u@Cq@Gi@Gc@G{@[CA_@Ko@Ss@UYIKDI?K?MPQTIH[f@GN{@rBa@fAs@nBuDxJw@xBi@vA]~@gCzGo@hBUr@GLSh@ENMH_@~@y@tByArDm@~Aa@`Ai@vA_K`WKv@[[sDkDaD_DgD}CqAcAwAGgE_AQEo@K_@GkB[M?c@Pf@lAb@lALn@F\\T|A^nDDPh@dC\\bBBf@@b@?~@AxD?nAAjD?tFGpEBlI?ZHnF@`A@z@A\\?\\OvHGtBAd@@x@Ij@GjBAf@?VKAq@A}@GmBMm@G[Cc@AUC[C[COEg@GgAIy@EcAKu@Ee@Ek@E{@Ck@bBEPQj@W`Ay@IAB?BYCMCE?ABCTKt@BDB@bALD?BEPiAAEEA_@E?C@Co@Oe@@c@?Q?GgAEsAA_@i@D[Bm@DS@e@?O?M@QAw@GeBQm@Kq@IgAM_AK_@AUAk@@q@@m@DqAHCOVC|@Ej@Er@Ab@?gA}BEGGMWi@EKS]o@mAUs@I_@Om@K_@CIWiA]{Au@{Ci@wB?ESiAAMBsAFk@C[@Y@ONcCf@mI^uGLaCd@aIDu@@GPgDLsBDe@JmB@YBOBe@BeAFoAFwADsA@SJ_CDwAJgCFaBLkD@IFuBDeA@YBg@Bs@@SBu@@QBs@@SDaATkG@MmBn@c@NMB}A`@uAb@AOxBq@lA_@jCq@JCZKbBgAtAu@|@i@^U|CgBZQ|@k@XSdBw@PIhAUlBa@~EeAhAS|Bg@~@OzA]TQP[TiC\\wBd@uAL]PYXg@^o@Zc@hBsD`@eA~@_EJk@BORkAXcBPiABOf@_DFSf@}ARm@fAkDv@{BN[^eAd@oAdAmCnBsF^eApBqFFMBIXgA`BiEVu@Xs@h@sAz@aBTWvA{A?Uk@_A][eAgAg@i@mAiA_AeAuCwC_AaAk@o@YYk@k@]]OQq@s@}@eABE|@_Ap@u@bAmAt@{@`A}@z@}@x@y@X]wAa@UGeAWECcBq@KEKCo@OWGWCSEOCQKEKO]CGEK{@_Cu@sBCEYk@[c@]_@Ua@AUAUGqCAoAF}@Hi@DSRqAH@vBb@pAXRoAHa@Lk@L?~AIl@Cb@CHADo@VmAVuAX}AXyAb@cCz@qEGQQC]Iu@QICIEEKMa@YaAAGWaA`@KVi@BO|@VjCt@l@PB@v@Tz@mD~@ZlF`B\\JXJ~BjFl@Wn@]~DeBHPFLHNZd@lCbBnBlAfBbAhAl@bAn@@@CDKP|@p@t@d@x@j@x@j@jAh@h@r@HJVZc@nBdAVOz@CLG|@?DMjAKhAAPOjBEPINIVS^Sd@GPK\\EfAYnAMl@AHMx@GTAJCLEXOv@OrA[hBtARn@Lf@HTFRHRFt@ZXg@v@{ATc@XPa@x@s@rAKN]r@gA|BmAtAWViBpAPVf@r@PRn@|@JPiBnAWP}BnAp@jAd@p@JNl@z@p@nAmAnDYr@y@YCAOEICSFSNMLUT}BrBSLc@^e@`@YVGDOLEBqA~@g@^gAx@SNGDADEDJDhA^f@LFB`@Jd@Lr@T`A\\Vk@Ro@^gA`@oAv@yBHUbA\\~@oCd@uAXs@lAoDq@oAm@{@KOe@q@q@kAk@gAu@sAGKIM_Ah@wD|BiC~Ai@ZOLQ]DCHGjAs@j@[RM|EsCdAo@lD_CbBiA~@q@t@_AXa@@CXa@LUR]Te@Xm@Xg@v@{ATc@LWzA_DNWb@q@\\e@|@cA|CkC{@a@QIKC_Ba@iAc@UMk@W_Ai@CC]QMKAICEGMGEMCsAW@QJiALkA?EF}@BMN{@eAWb@oBW[IKhAmBd@mAh@mAj@qAp@^JFjAb@p@JFCBC@GW}BG_B?{ACc@GSw@]s@Sk@EcBBc@BOX?VPTd@Fj@N`A^TLBH@H?JCHEJSj@?D@DDFj@XFB@F?FSl@Rm@?GAGGCk@YEGAE?ERk@DKBI?KAICIUMaA_@k@Oe@GQU?WNYb@CbBCj@Dr@R`@NTLFRBb@?zAF~AV|BAFCBGBq@KkAc@KGq@_@k@pAi@lAe@lAiAlBHJVZc@nBdAVOz@CLG|@?DMjAKhAAPOjBEPINIVS^Sd@GPK\\EfAYnAMl@AHMx@GTAJCLEXOv@OrA[hBtARn@Lf@HTFRHRFt@ZXg@v@{ATc@XPa@x@s@rAKN]r@gA|BmAtAWViBpAaAp@iDxB_Ah@wD|BiC~Ai@ZOLSNc@XgGfEKFMHwA`AoA~@u@h@GHgAfAMLIHUZk@zAi@tAYp@uAlDkA~Ci@~AuAvDHDf@^d@Pj@TnAf@pAd@~@\\dA`@pA`@pAd@n@TnAb@pAf@nAb@rAf@nAZdCf@jDz@dAP|Dt@|AZpAXRHT\\d@tBvA|Fv@fD^~A|AnGDPDN@PCPELYx@IVi@pAqFzNKf@HBHDBDBDBD@FPF^LLDPFf@Nb@LXJjAXf@HB?^Br@Bp@?n@Ed@G`@IP?R@JC`Dy@PE`GyAv@Ov@Gl@?p@@r@Jn@Np@Xh@VJF~B`B~DhCLFlAl@xAp@NDvDxAn@Vp@T|@TB@dDp@lBZnC`@~B\\lO~BbGdAzCd@v@Hf@FfAHzAJdADh@BnAB`BFnADjAJrBR|@JxFn@f@FhANfEj@dDf@dCj@vAXFCH?PBRBz@Rh@LhCl@pBr@PHf@Vx@`@NHr@t@b@`@fAjA~ArAh@b@PNPRPRNXHLXf@R^FHbBvCLNHLZPVDj@JnEl@TH\\H`Ad@TLFFJHLHr@p@RRRRTNRLn@\\`@Pf@Xf@VVLNFPFPBRDRBT@f@B\\DVB\\BpALXDX@V@V@Z?dBAX?@?",
+      "distanceKm": 39.5727,
+      "durationMin": 64.31,
+      "straightLineKm": 24.7,
+      "flags": {
+        "isNight": true,
+        "escortRequired": false,
+        "reorderedForSafety": true
+      },
+      "createdAt": "2026-08-31T10:30:47.265Z",
+      "startedAt": null,
+      "completedAt": null,
+      "currentSeq": 1,
+      "lastLocation": null
+    },
+    {
+      "id": "R-S1-03",
+      "shiftId": "S1",
+      "direction": "logout",
+      "status": "planned",
+      "vendorId": null,
+      "driverId": null,
+      "vehicleId": null,
+      "capacity": 4,
+      "stops": [
+        {
+          "seq": 1,
+          "employeeId": "E14",
+          "name": "Swathi R",
+          "gender": "F",
+          "lat": 17.507843,
+          "lng": 78.349556,
+          "address": "Miyapur, Hyderabad",
+          "pin": "7655",
+          "etaMin": 16,
+          "etaClock": "22:46",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 2,
+          "employeeId": "E13",
+          "name": "Priya T",
+          "gender": "F",
+          "lat": 17.494614,
+          "lng": 78.346717,
+          "address": "Miyapur, Hyderabad",
+          "pin": "1710",
+          "etaMin": 22,
+          "etaClock": "22:52",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 3,
+          "employeeId": "E2",
+          "name": "Suresh B",
+          "gender": "M",
+          "lat": 17.482733,
+          "lng": 78.401843,
+          "address": "Kukatpally, Hyderabad",
+          "pin": "7726",
+          "etaMin": 34,
+          "etaClock": "23:04",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        }
+      ],
+      "geometry": "{|miBo`k}MLA@?J?|AApDCN?n@?r@AZUVAr@ArDG?rA{DAw@?S?U[yC@{DBw@@Q?u@BA?qAAE?Q?S?OAOAa@EeBOsBOSCOAQCKCOE]KwAs@]Qi@Wa@U_@SWOoB_Ba@YWM]OUISGSEWEiDe@YGOCGACAOG[GQGQMIGEGKK_BmCU_@IGKEMAOAQ?Q@QDOFMF}BpBkAbAIF[V{C~B{@j@gCpBMJA@uBvAgAr@o@d@MRED[d@gA|AMPEFW^g@hAMd@Gj@ApBI~BAn@?FCPI~BC`AGt@Gd@QlAUfAMj@CJYtAEVe@pGE`@M|AATMtAE\\El@ExA?h@CTGPa@r@IPMVELADCFADEp@K?MASCUAc@EgAYmBe@mAa@OIeC}@i@GyBIaDG_BEk@AWAm@Cq@EiBUiAKeAAo@Ae@Bq@Jm@Lk@Nq@RiA\\_Ah@g@XqB`Am@\\c@TaBt@eBx@kBl@gALUFwAXi@L}@RKBe@JGB_@JKBy@X[H_@Lq@Ty@Xq@Ro@Tq@Rg@NcDbAcAXg@FUD_BZi@LWHGDID}Av@s@`@SNkAr@yDvBe@VWJID}@TwARm@JoBRyCX_AH_E\\mEb@E@i@F{@R]NUL]\\e@f@i@|@KPU\\MXq@bAQXEHU^ILYd@aBlCg@|@ABk@~@{@jAYZa@j@{@jAo@l@QT_ClCe@f@KFEB[LYJODYJcC~@k@R}@Z_@NwAl@kAj@m@^q@d@i@j@KLwAbB}@t@s@n@Y`@MPCNCd@Fv@F|@Bd@AfBGp@ALEVCJCPGXIXOj@EJOp@K^Kd@Qv@ABIj@??ALGn@SCDm@BM@KF]?CDOZyAZkAVcALw@He@Ba@Fu@?m@KoBIsAEi@CYSgBIw@c@iCCUc@yBiAk@wBgAGCg@WOGOIUKECiAk@u@_@_@UKIq@i@a@m@[u@_@{@Oe@Ow@Ou@C_A?EAM?IB[@[No@H[k@Eo@Gc@Ci@Ak@Fk@HcBL]B}@?g@Ie@OkBa@eAUw@O{CMkCMeC]MAO@Q?eAKm@C_@CETe@jCKn@OnACLId@Id@Sr@KZQ\\KVu@x@u@x@[`@]^e@d@YZ_@f@o@p@aAbAEDEFGHa@b@o@x@s@x@w@bAkBlBKH?bGv@fA~E@d@LhBj@hCXdBdEdC\\ZKRa@Ns@Lc@@GLg@Ne@Pg@Ng@Pm@~@\\|Aj@j@R`@PvA^`Ab@^kAv@Dr@DtAZ~DfBrF|@fD`@lDb@tBVrC^`G~@UzAc@dDH@p@DFe@RBEd@KjACVCZGx@x@AJgBVuCf@qC`@eBu@EOp@K^Kd@Qv@ABIj@??ALGn@SCDm@BM@KF]?CDOZyAZkAVcALw@He@Ba@Fu@?m@KoBIsAEi@CYSgBIw@c@iCCUc@yBa@iCkAoGQaAO{@SqAKg@_AcGIi@Kg@k@cESiAMs@E]CKGi@Ii@AIKo@G_@Ky@C]?KAUAcB@[?I@_A?E@}BJcDHyF@_@IyBGqFAaBBwEDkC?_@?eDBiE@iC@iGA{@G}@W_Bg@}BCQScAo@wFg@gBq@gBYs@_A_C[y@CGu@mBUg@Ws@So@YeAa@yAYmAGc@CSIaACaA@_@@g@F{@HkALyAPmC@GNoBFw@^oFVqDJ_A\\kFHiABw@TiC\\wBd@uAL]PYXg@^o@Zc@hBsD`@eA~@_EJk@BORkAXcBPiABOf@_DFSf@}ARm@fAkDv@{BN[^eAd@oAdAmCnBsF^eApBqFFMBIXgA`BiEVu@`@PuAlDkA~Ci@~AuAvDHDf@^d@Pj@TnAf@pAd@~@\\dA`@pA`@pAd@n@TnAb@pAf@nAb@rAf@nAZdCf@jDz@dAP|Dt@FYD[DWBMVc@fA]??gA\\Wb@CLEVEZGX|AZpAXRHT\\d@tBvA|Fv@fD^~A|AnGDPDN@PCPELYx@IVi@pAqFzNKf@HBHDBDBDBD@FPF^LLDPFf@Nb@LXJjAXf@HB?^Br@Bp@?n@Ed@G`@IP?R@JC`Dy@PE`GyAv@Ov@Gl@?p@@r@Jn@Np@Xh@VJF~B`B~DhCLFlAl@xAp@NDvDxAn@Vp@T|@TB@dDp@lBZnC`@~B\\lO~BbGdAzCd@v@Hf@FfAHzAJdADh@BnAB`BFnADjAJrBR|@JxFn@f@FhANfEj@dDf@dCj@vAXFCH?PBRBz@Rh@LhCl@pBr@PHf@Vx@`@NHr@t@b@`@fAjA~ArAh@b@PNPRPRNXHLXf@R^FHbBvCLNHLZPVDj@JnEl@TH\\H`Ad@TLFFJHLHr@p@RRRRTNRLn@\\`@Pf@Xf@VVLNFPFPBRDRBT@f@B\\DVB\\BpALXDX@V@V@Z?dBAX?@?",
+      "distanceKm": 28.632,
+      "durationMin": 43.565000000000005,
+      "straightLineKm": 20.3,
+      "flags": {
+        "isNight": true,
+        "escortRequired": false,
+        "reorderedForSafety": false
+      },
+      "createdAt": "2026-08-31T10:30:47.265Z",
+      "startedAt": null,
+      "completedAt": null,
+      "currentSeq": 1,
+      "lastLocation": null
+    },
+    {
+      "id": "R-S1-04",
+      "shiftId": "S1",
+      "direction": "logout",
+      "status": "planned",
+      "vendorId": null,
+      "driverId": null,
+      "vehicleId": null,
+      "capacity": 4,
+      "stops": [
+        {
+          "seq": 1,
+          "employeeId": "E7",
+          "name": "Meera S",
+          "gender": "F",
+          "lat": 17.429611,
+          "lng": 78.358026,
+          "address": "Gachibowli, Hyderabad",
+          "pin": "4731",
+          "etaMin": 15,
+          "etaClock": "22:45",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 2,
+          "employeeId": "E9",
+          "name": "Arjun P",
+          "gender": "M",
+          "lat": 17.435774,
+          "lng": 78.343024,
+          "address": "Gachibowli, Hyderabad",
+          "pin": "1188",
+          "etaMin": 31,
+          "etaClock": "23:01",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 3,
+          "employeeId": "E11",
+          "name": "Naveen T",
+          "gender": "M",
+          "lat": 17.431065,
+          "lng": 78.348757,
+          "address": "Gachibowli, Hyderabad",
+          "pin": "5457",
+          "etaMin": 42,
+          "etaClock": "23:12",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        },
+        {
+          "seq": 4,
+          "employeeId": "E8",
+          "name": "Vijay N",
+          "gender": "M",
+          "lat": 17.43462,
+          "lng": 78.338899,
+          "address": "Gachibowli, Hyderabad",
+          "pin": "9317",
+          "etaMin": 53,
+          "etaClock": "23:23",
+          "status": "pending",
+          "escortRequired": false,
+          "verifiedAt": null
+        }
+      ],
+      "geometry": "{|miBo`k}MLA@?J?|AApDCN?n@?r@Ap@AtFIx@BZBVFVJn@b@pC`Dj@l@FNnA`Bt@`AHJFHj@b@JHVNHBr@N^@bA@\\Ah@A`BCb@A`@A@X_@@sBHeABO@M@M@o@Eo@G}@S}@x@o@j@ONc@`@u@r@SPkD`DgAfAA@YXe@r@Yj@IRKd@?`@AREf@a@|CWtACNADOn@Kb@I\\AFQr@GXCHI\\ETAFCFQ~@EPARBNHLj@f@fD`Cd@Zv@p@zBnBv@t@f@f@ZVJDX?RYh@b@DPsA`BOXGRCNAZ@ZBTNZLPTTXTjGvDlF|Ct@d@xCbBzBbAjBv@VJn@VnFvAbDp@|F`AlARzKjBhInAnARpHjAxD\\t@Jx@H|@LdAPzAXpARl@Cf@S^Yh@{AJe@FYJOJIPEPIPQNSJMNGNEP@JBJFHR@J?JCJ?BEHIHKBQNKNIV}AlKER?P@JFNJR@TAFCJILMHQDSCOIKMCKAUGKEIIQMWMWMQKKIEK?MDILoBlCq@|@SXgAzAm@z@k@t@CD[b@KGhAaBi@_@i@SWESG][OWGGUa@MSKMMYUSWe@QUKCKAI?u@Nc@H]Ba@Kk@_@c@[QWGc@?e@EuCKg@MUOSc@S{Aq@wKmBaGu@eG_A[Ea@Kq@Sc@OmD_Ac@EW?QDPEV?b@DlD~@b@Np@R`@JZDfDf@|AV`Gt@vKlBzAp@b@RNRLTJf@DtC?d@Fb@PVb@Zj@^`@J\\Cb@It@OH?J@JBPTVd@TRLXJLLRT`@FFNV\\ZRFVDh@Rh@^|DoFnBmCHOHIFC@ANAR?JJPNRXl@t@TETBPJJR@TAFCJILMHQDGHIRMX?ZAv@ChA?FGdACRIl@CL?DW~AU~A]`Cc@vCIb@Cd@Qj@CDEHOZABUn@Y`@EDg@f@EDq@t@IFi@r@GHWj@Yl@m@Ng@Je@Pq@XSLSLIF[Pg@^C@Iz@ARShBMz@_@zBIZKd@Ol@]fA_AnBmDhGu@tB[z@WjAEt@AH?\\@B?BFh@FVDVMIGCIEUOWOGEoE_CMIk@YcAk@wBmAcFsCyMkHkAo@EAAAIEo@]oE_CKGKGMGaEqBINKTM\\?LDJLXL^DTRdANjARfARnA^vBNfB?\\El@Gh@[jBYrAXRVXPVHJRh@Lp@@JBx@Gv@St@IRKRe@j@QL[Tu@Vc@BWBg@AQAQC]Go@Qy@o@k@_AWgAEm@FoAVcAd@s@h@g@p@[p@O??t@Er@BRoBDg@?A@g@?k@C]G[Ga@I_@ISKMGKIEKKuBgB}@y@c@m@GO?G?E?GB_@l@yGBYJe@?CFk@Ja@NFHDHDZNHDN]FM@CDKtEyKzG{OHQnBoEDMBM?GG[JHFDFH@Dh@CVG^SVWJBLB\\FRNLJFPDTDd@CTCNKLMHKFCDAH@LHLD@B@H@BB@B?H?@AHQZ?D@FHHl@n@FHBHFN?LAJI`A?RH\\BTCXETWt@a@v@m@pAEN?LBXAPCP?BKRY^OJaAr@INKRAX@VBTFRJLTLVLb@Tr@\\NN`@XHJTXNFRJJDFH@JIz@Ej@AL@L?\\AHGDI@GAMCGAS?R?F@LBF@HAFE@I?]AM@MDk@H{@AKGIKESKOGUYIKa@YOOs@]c@UWMUMKMGSCUAW@YJSHO`As@NKX_@JSBU@QCY?MDOl@qA`@w@Vu@DUBYCUI]?SHaA@K?MGOCIGIm@o@IIAG?EP[@I?A?IACCCIACAEAIMAM@IBEJGLIJMBOBUEe@EUGQMKSO]GMCKCWV_@RWFi@BAFADWp@gAjCYp@qCnGeD~He@dAoA~CkAnCCHABUn@b@TTJ~HzDM\\KGKGMGaEqBINKTM\\?LDJLXL^DTRdANjARfARnA^vBNfB?\\El@Gh@[jBYrAXRVXPVHJRh@Lp@@JBx@Gv@St@IRKRe@j@QLOJKHu@Vc@BWBg@AQAQC]Go@Qy@o@k@_AWgAEm@FoAVcAd@s@h@g@p@[p@Ot@Er@BRoBDg@?A@g@?k@C]G[Ga@I_@ISKMGKIEKKuBgB}@y@c@m@GO?G?E?GB_@l@yGBYJe@?CFk@iIaEuAg@ICEAUGeBm@wBu@GCCAuC}@OI_@OwCgA{Au@OIWOMIsBiAgB_AqBgAiAm@UUU[w@aBaAiBWm@ACIMEKOQLSDE@ABEjA{A`@m@NSBCDGZc@BCPW@Ab@o@FILQJMBENWHSJUd@uABKrAcEX{@BIPk@@ATo@l@qBBGPm@f@uANc@FOf@qAJYf@eAP]Tc@Te@lA{BJSHi@^s@BELSr@uA@CLUvBsDP[Xi@Xe@HMPMAK?IBIBGDGFEJCTc@HK^c@b@m@Kc@AGUe@w@u@wAqAqAiAeAaAs@o@KI}@m@i@[_@_@U_@K]Ck@@e@DSBI@KNi@ZeADOJc@DKDYHa@Nu@BK@Ev@gGL}@Xe@BWZm@t@_ATUNQ|@{@t@m@~ByBDCFIdAcAHKTUd@e@v@w@y@y@y@eAAAgBqB_@IoDeEk@SGBODO?OCICIGEE[A{DAw@?S?U[yC@{DBw@@Q?u@BA?qAAE?Q?S?OAOAa@EeBOsBOSCOAQCKCOE]KwAs@]Qi@Wa@U_@SWOoB_Ba@YWM]OUISGSEWEiDe@YGOCGACAOG[GQGQMIGEGKK_BmCBIBGBCBCBABAJ?FHbBvCLNHLZPVDj@JnEl@TH\\H`Ad@TLFFJHLHr@p@RRRRTNRLn@\\`@Pf@Xf@VVLNFPFPBRDRBT@f@B\\DVB\\BpALXDX@V@V@Z?dBAX?@?",
+      "distanceKm": 27.879900000000003,
+      "durationMin": 77.83333333333333,
+      "straightLineKm": 10.4,
+      "flags": {
+        "isNight": true,
+        "escortRequired": false,
+        "reorderedForSafety": true
+      },
+      "createdAt": "2026-08-31T10:30:47.265Z",
+      "startedAt": null,
+      "completedAt": null,
+      "currentSeq": 1,
+      "lastLocation": null
+    }
+  ],
   "alerts": [
     {
       "id": "A1",
@@ -1174,11 +1474,56 @@
       "resolvedAt": null,
       "suggestedLat": null,
       "suggestedLng": null
+    },
+    {
+      "status": "open",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null,
+      "createdAt": "2026-08-31T10:19:58.606Z",
+      "type": "lone_female_night",
+      "severity": "high",
+      "employeeId": "E10",
+      "employeeName": "Shalini K",
+      "shiftId": "S1",
+      "message": "Shalini K is the sole passenger on a night logout route — escort required",
+      "rawAddress": null,
+      "id": "A4"
+    },
+    {
+      "status": "open",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null,
+      "createdAt": "2026-08-31T10:19:58.607Z",
+      "type": "lone_female_night",
+      "severity": "high",
+      "employeeId": "E7",
+      "employeeName": "Meera S",
+      "shiftId": "S1",
+      "message": "Meera S is the sole passenger on a night logout route — escort required",
+      "rawAddress": null,
+      "id": "A5"
+    },
+    {
+      "status": "open",
+      "resolvedAt": null,
+      "suggestedLat": null,
+      "suggestedLng": null,
+      "createdAt": "2026-08-31T10:30:47.265Z",
+      "type": "lone_female_night",
+      "severity": "high",
+      "employeeId": "E10",
+      "employeeName": "Shalini K",
+      "shiftId": "S1",
+      "message": "Shalini K is the sole passenger on a night logout route — escort required",
+      "rawAddress": null,
+      "id": "A6"
     }
   ],
   "trips": [],
   "meta": {
-    "lastGeneratedAt": null,
+    "lastGeneratedAt": "2026-08-31T10:30:47.265Z",
     "version": 1
   }
 }
