@@ -9,7 +9,13 @@ import VehicleMarker from '../../components/VehicleMarker';
 import Spinner from '../../components/Spinner';
 import EmptyState from '../../components/EmptyState';
 import api from '../../lib/api';
-import { clock } from '../../lib/format';
+
+function formatTimestamp(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+}
 
 const NAV = (openAlerts) => [
   { to: '/admin', label: 'Dashboard', icon: LayoutDashboard },
@@ -176,7 +182,7 @@ export default function Alerts() {
                   </div>
                   <p className="text-sm text-slate-600 mt-1">{a.message}</p>
                   <p className="text-xs text-slate-400 mt-1">
-                    {a.employeeName ? `${a.employeeName} · ` : ''}{clock(a.createdAt)}
+                    {a.employeeName ? `${a.employeeName} · ` : ''}{formatTimestamp(a.createdAt)}
                   </p>
                   {a.rawAddress && (
                     <p className="text-xs text-slate-500 mt-1 flex items-center gap-1">

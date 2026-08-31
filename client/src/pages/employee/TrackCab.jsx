@@ -9,12 +9,18 @@ import Badge from '../../components/Badge';
 import Spinner from '../../components/Spinner';
 import EmptyState from '../../components/EmptyState';
 import api from '../../lib/api';
-import { getSocket, subscribeRoute } from '../../lib/socket';
+import { subscribeRoute } from '../../lib/socket';
 import { clock } from '../../lib/format';
 
 const NAV = [{ to: '/employee', label: 'My Ride', icon: Car }];
 
 const STEPS = ['Assigned', 'On the way', 'Arriving', 'Verified', 'Completed'];
+
+/** minutes-from-now -> "HH:MM" 24h string, the shape lib/format.clock() expects. */
+function hhmmFromNow(minutes) {
+  const d = new Date(Date.now() + minutes * 60000);
+  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+}
 
 function stepIndexFor(route, myStop) {
   const stopStatus = myStop?.status;
@@ -63,58 +69,49 @@ export default function TrackCab() {
   const routeId = trip?.route?.id;
   const mySeq = trip?.myStop?.seq;
 
+  // CONTRACTS §13: exactly one subscription per mount, and its unsubscribe MUST be returned as
+  // the effect cleanup. Previously this called subscribeRoute(routeId) and threw the returned
+  // unsubscribe away while registering a second, hand-rolled set of listeners — so every mount
+  // (and every mySeq change, and every StrictMode double-invoke) permanently leaked 5 listeners
+  // on the shared socket. subscribeRoute already filters by routeId, so the guards are dropped.
   useEffect(() => {
     if (!routeId) return undefined;
 
-    const socket = getSocket();
-    subscribeRoute(routeId);
+    const flashTimers = [];
 
-    const onLocation = (payload) => {
-      if (payload.routeId !== routeId) return;
-      setVehiclePos({ lat: payload.lat, lng: payload.lng, bearing: payload.bearing });
-      if (payload.etaMin != null) setEtaMin(payload.etaMin);
-    };
-
-    const onProximity = (payload) => {
-      if (payload.routeId !== routeId) return;
-      if (mySeq != null && payload.seq === mySeq) {
-        setArrivedBanner(true);
-        setFlashPin(true);
-        setStepIndex((s) => Math.max(s, 2));
-        setTimeout(() => setFlashPin(false), 4000);
-      }
-    };
-
-    const onStopStatus = (payload) => {
-      if (payload.routeId !== routeId) return;
-      if (mySeq != null && payload.seq === mySeq) {
-        if (payload.status === 'arrived') setStepIndex((s) => Math.max(s, 2));
-        if (payload.status === 'verified') {
-          setStepIndex((s) => Math.max(s, 3));
-          setArrivedBanner(false);
-          setFlashPin(false);
+    const unsubscribe = subscribeRoute(routeId, {
+      onLocation(payload) {
+        setVehiclePos({ lat: payload.lat, lng: payload.lng, bearing: payload.bearing });
+        if (payload.etaMin != null) setEtaMin(payload.etaMin);
+      },
+      onProximityAlert(payload) {
+        if (mySeq != null && payload.seq === mySeq) {
+          setArrivedBanner(true);
+          setFlashPin(true);
+          setStepIndex((s) => Math.max(s, 2));
+          flashTimers.push(setTimeout(() => setFlashPin(false), 4000));
         }
-        if (payload.status === 'done') setStepIndex((s) => Math.max(s, 4));
-      }
-    };
-
-    const onRouteStatus = (payload) => {
-      if (payload.routeId !== routeId) return;
-      if (payload.status === 'in_progress') setStepIndex((s) => Math.max(s, 1));
-      if (payload.status === 'completed') setStepIndex(4);
-    };
-
-    socket.on('driver_location_update', onLocation);
-    socket.on('proximity_alert', onProximity);
-    socket.on('stop_status', onStopStatus);
-    socket.on('route_status', onRouteStatus);
+      },
+      onStopStatus(payload) {
+        if (mySeq != null && payload.seq === mySeq) {
+          if (payload.status === 'arrived') setStepIndex((s) => Math.max(s, 2));
+          if (payload.status === 'verified') {
+            setStepIndex((s) => Math.max(s, 3));
+            setArrivedBanner(false);
+            setFlashPin(false);
+          }
+          if (payload.status === 'done') setStepIndex((s) => Math.max(s, 4));
+        }
+      },
+      onRouteStatus(payload) {
+        if (payload.status === 'in_progress') setStepIndex((s) => Math.max(s, 1));
+        if (payload.status === 'completed') setStepIndex(4);
+      },
+    });
 
     return () => {
-      socket.off('driver_location_update', onLocation);
-      socket.off('proximity_alert', onProximity);
-      socket.off('stop_status', onStopStatus);
-      socket.off('route_status', onRouteStatus);
-      socket.emit('unsubscribe_route', { routeId });
+      flashTimers.forEach(clearTimeout);
+      unsubscribe();
     };
   }, [routeId, mySeq]);
 
@@ -159,7 +156,10 @@ export default function TrackCab() {
   const { route, pin, myStop, driver, vehicle } = trip;
   const isNight = !!route.flags?.isNight;
   const vendorName = driver?.vendorName || driver?.vendor?.name || vehicle?.vendorName || vehicle?.vendor?.name;
-  const etaClock = etaMin != null ? clock(new Date(Date.now() + etaMin * 60000)) : null;
+  // format.clock() takes an "HH:MM" *string* (CONTRACTS §13). Passing it a Date made it return
+  // the Date object unchanged, which React then tried to render as a child ("Objects are not
+  // valid as a React child") and blew up the whole employee portal via the error boundary.
+  const etaClock = etaMin != null ? clock(hhmmFromNow(etaMin)) : null;
   const mapCenter = vehiclePos
     ? [vehiclePos.lat, vehiclePos.lng]
     : myStop

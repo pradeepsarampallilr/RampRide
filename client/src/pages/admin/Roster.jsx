@@ -78,22 +78,27 @@ export default function Roster() {
   }
 
   const columns = [
-    { key: 'name', header: 'Name', render: (row) => <span className="font-medium text-slate-800">{row.name}</span> },
-    { key: 'gender', header: 'Gender', render: (row) => <Badge tone={row.gender === 'F' ? 'female' : 'male'}>{row.gender}</Badge> },
-    { key: 'address', header: 'Address', render: (row) => <span className="text-slate-600">{row.address}</span> },
-    { key: 'shift', header: 'Shift', render: (row) => <span className="text-slate-600">{shiftLabel[row.shiftId] || row.shiftId}</span> },
+    { key: 'name', label: 'Name', render: (row) => <span className="font-medium text-slate-800">{row.name}</span> },
+    { key: 'gender', label: 'Gender', render: (row) => <Badge tone={row.gender === 'F' ? 'female' : 'male'}>{row.gender}</Badge> },
+    { key: 'address', label: 'Address', render: (row) => <span className="text-slate-600">{row.address}</span> },
+    { key: 'shift', label: 'Shift', render: (row) => <span className="text-slate-600">{shiftLabel[row.shiftId] || row.shiftId}</span> },
     {
       key: 'coords',
-      header: 'Coordinates',
-      render: (row) => (
-        <span className="font-mono text-xs text-slate-500">
-          {row.lat != null && row.lng != null ? `${row.lat.toFixed(4)}, ${row.lng.toFixed(4)}` : '—'}
-        </span>
-      ),
+      label: 'Coordinates',
+      render: (row) => {
+        const lat = Number(row.lat);
+        const lng = Number(row.lng);
+        const valid = Number.isFinite(lat) && Number.isFinite(lng);
+        return (
+          <span className="font-mono text-xs text-slate-500">
+            {valid ? `${lat.toFixed(4)}, ${lng.toFixed(4)}` : '—'}
+          </span>
+        );
+      },
     },
     {
       key: 'addressValid',
-      header: 'Address',
+      label: 'Address',
       render: (row) => (
         <Badge tone={row.addressValid ? 'completed' : 'alert'}>
           {row.addressValid ? 'Valid' : 'Invalid'}

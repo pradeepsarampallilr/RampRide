@@ -202,7 +202,7 @@ export default function AssignRoutes() {
                     </div>
                   </div>
                   <p className="mt-1 text-xs text-slate-500">
-                    {r.stops?.length || 0} passengers · {km(r.distanceKm)} km
+                    {r.stops?.length || 0} passengers · {km(r.distanceKm)}
                   </p>
                 </SelectableCard>
               ))}

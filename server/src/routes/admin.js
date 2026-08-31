@@ -235,6 +235,30 @@ function fallbackLegKm(a, b) {
   return haversineKm(a, b) * 1.35;
 }
 
+/**
+ * Releases any driver/vehicle that is still flagged 'assigned' but is no longer referenced by a
+ * live assigned/in_progress route. POST /admin/generate and DELETE /admin/routes both delete
+ * routes out from under whatever vendor had dispatched them; without this reconciliation the
+ * driver and vehicle stay 'assigned' forever and silently vanish from the vendor's "Available
+ * Drivers"/"Available Vehicles" lists.
+ */
+function releaseOrphanedFleet(database) {
+  const activeDriverIds = new Set();
+  const activeVehicleIds = new Set();
+  for (const r of database.routes) {
+    if (r.status === 'assigned' || r.status === 'in_progress') {
+      if (r.driverId) activeDriverIds.add(r.driverId);
+      if (r.vehicleId) activeVehicleIds.add(r.vehicleId);
+    }
+  }
+  for (const d of database.drivers) {
+    if (d.status !== 'available' && !activeDriverIds.has(d.id)) d.status = 'available';
+  }
+  for (const v of database.vehicles) {
+    if (v.status !== 'available' && !activeVehicleIds.has(v.id)) v.status = 'available';
+  }
+}
+
 function computeEtas(route, office, matrix, employeeIndexById, shiftTimeMinutes) {
   let cumulativeMin = 0;
   let prevIdx = 0;
@@ -266,6 +290,16 @@ router.post(
 
     // Wipe existing routes for this shift first.
     database.routes = database.routes.filter((r) => r.shiftId !== shiftId);
+
+    // Route-derived alerts (§5 types raised by the solver) describe routes that no longer exist,
+    // so drop the open ones for this shift before re-solving. Without this, every re-generate
+    // appends another copy of the same lone_female_night / escort_required / capacity_overflow
+    // alert and the Alerts queue fills with duplicates. invalid_address alerts belong to the
+    // roster, not to a route generation, so they are deliberately left untouched.
+    const ROUTE_DERIVED_ALERT_TYPES = ['lone_female_night', 'escort_required', 'capacity_overflow', 'unassigned_route'];
+    database.alerts = database.alerts.filter(
+      (a) => !(a.shiftId === shiftId && a.status === 'open' && ROUTE_DERIVED_ALERT_TYPES.includes(a.type))
+    );
 
     const employees = database.employees.filter((e) => e.shiftId === shiftId && e.addressValid);
     const employeeIndexById = new Map(employees.map((e, i) => [e.id, i + 1]));
@@ -356,6 +390,7 @@ router.post(
     }
 
     database.routes.push(...finalRoutes);
+    releaseOrphanedFleet(database);
 
     const metrics = computeMetrics(finalRoutes, employees, office);
 
@@ -382,6 +417,7 @@ router.delete('/admin/routes', requireRole('admin'), (req, res) => {
   const before = database.routes.length;
   database.routes = database.routes.filter((r) => r.shiftId !== shiftId);
   const deleted = before - database.routes.length;
+  releaseOrphanedFleet(database);
   db.save();
   res.json({ deleted });
 });

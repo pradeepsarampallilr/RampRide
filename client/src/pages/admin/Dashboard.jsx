@@ -14,7 +14,7 @@ import Badge from '../../components/Badge';
 import Spinner from '../../components/Spinner';
 import EmptyState from '../../components/EmptyState';
 import api from '../../lib/api';
-import { inr, km, clock } from '../../lib/format';
+import { inr, km } from '../../lib/format';
 
 const NAV = (openAlerts) => [
   { to: '/admin', label: 'Dashboard', icon: LayoutDashboard },

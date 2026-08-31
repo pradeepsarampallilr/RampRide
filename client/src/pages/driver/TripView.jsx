@@ -166,7 +166,9 @@ export default function TripView({ initialRoute, initialPassengers = [], onExit 
   }
 
   if (finished) {
-    const verifiedCount = stops.filter((s) => s.status === 'done').length;
+    // A PIN-verified stop stays 'verified' unless /driver/complete-stop is also called, so count
+    // both — otherwise the completion summary always reported 0/N stops served.
+    const verifiedCount = stops.filter((s) => s.status === 'verified' || s.status === 'done').length;
     return (
       <div className="mx-auto flex max-w-md flex-col items-center gap-4 py-10 text-center">
         <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">

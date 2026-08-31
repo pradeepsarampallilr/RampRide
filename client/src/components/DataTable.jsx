@@ -12,7 +12,9 @@ export default function DataTable({ columns, rows, rowKey, onRowClick, empty }) 
           <tr>
             {columns.map((col) => (
               <th key={col.key} className={`px-4 py-3 font-medium ${col.className ?? ''}`}>
-                {col.label}
+                {/* Callers are split between `header` (FleetBoard) and `label` (Roster); accept
+                    both so neither table renders a blank header row. */}
+                {col.header ?? col.label}
               </th>
             ))}
           </tr>

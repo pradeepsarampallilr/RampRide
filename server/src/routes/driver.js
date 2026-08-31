@@ -60,7 +60,11 @@ router.post('/arrive', (req, res) => {
     req.app.get('io').to(`route:${routeId}`).emit('stop_status', { routeId, seq, status: 'arrived' });
   }
 
-  res.json({ stop, distanceM, unlocked });
+  // CONTRACTS §4: any response served to a driver must have `pin` stripped from every stop.
+  // Route the stop back through sanitizeRoute so this endpoint uses the same single helper.
+  const sanitizedStop = db.sanitizeRoute(route, req.user.role).stops.find((s) => s.seq === seq);
+
+  res.json({ stop: sanitizedStop, distanceM, unlocked });
 });
 
 // ---------------------------------------------------------------------------
