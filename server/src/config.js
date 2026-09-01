@@ -1,11 +1,11 @@
 export const OFFICE = { name: 'HITEC City Hub', lat: 17.4435, lng: 78.3772 };
 export const OSRM_BASE = 'https://router.project-osrm.org';
-export const PROXIMITY_RADIUS_M = 50;      // PIN unlock radius
+export const PROXIMITY_RADIUS_M = 50;      // PIN unlock radius - otp will be enterable if the driver and user is at 50meters distance
 export const NIGHT_START_HOUR = 20;        // 20:00 inclusive
 export const NIGHT_END_HOUR = 6;           // 06:00 exclusive
 export const COST_PER_KM = 18;             // INR
 export const CO2_KG_PER_KM = 0.12;
-export const CITY_BBOX = { minLat: 17.0, maxLat: 17.8, minLng: 78.0, maxLng: 78.9 };
+export const CITY_BBOX = { minLat: 17.0, maxLat: 17.8, minLng: 78.0, maxLng: 78.9 };  // perimeter of the service
 export const MAX_DETOUR_FACTOR = 1.6;      // route km vs. straight-line sum guard
 export const SIM_TICK_MS = 500;
 export const SIM_SPEED_MULTIPLIER = 25;    // 25x real time

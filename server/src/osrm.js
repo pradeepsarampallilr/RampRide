@@ -73,11 +73,13 @@ function coordsToOsrmString(coords) {
 }
 
 async function fetchWithRetry(url) {
+  // attempt once, then retry after a backoff if it fails
   const attempt = () => axios.get(url, { timeout: AXIOS_TIMEOUT_MS });
   try {
     const res = await attempt();
     return res.data;
   } catch (firstErr) {
+    // wait a bit and try again
     await new Promise((resolve) => setTimeout(resolve, RETRY_BACKOFF_MS));
     try {
       const res = await attempt();
@@ -88,13 +90,17 @@ async function fetchWithRetry(url) {
   }
 }
 
+
 async function fetchUrl(url) {
+  // check disk cache first - if we have a cached response, return it immediately without hitting OSRM
   const cached = readCache(url);
   if (cached !== undefined) return cached;
 
+  // otherwise, enqueue a request to OSRM and cache the result
   const data = await enqueue(() => fetchWithRetry(url));
   if (data === null || data === undefined) return null;
 
+  // cache the successful response for future calls
   writeCache(url, data);
   return data;
 }

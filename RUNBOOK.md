@@ -42,7 +42,7 @@ cd ~/Desktop/Project/shiftguard
 npm run install:all                      # takes 1-2 min
 node -e "const d=require('./server/db.json');
   console.log('employees',d.employees.length,
-  '| invalid',d.employees.filter(e=>!e.addressValid).length,
+  '| invalid',d.employees.filter(e=>e.addressValid===false).length,
   '| shifts',d.shifts.length,'| drivers',d.drivers.length,
   '| vehicles',d.vehicles.length,'| users',d.users.length)"
 ```

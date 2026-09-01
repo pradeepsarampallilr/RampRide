@@ -2,6 +2,9 @@
 // CONTRACTS.md §1 — no @mapbox/polyline dependency), and simulator interpolation helpers.
 // Points are always plain { lat, lng } objects.
 
+//The Haversine formula calculates the shortest great-circle distance between two points 
+// on the surface of a sphere using their latitude and longitude coordinates.
+
 const EARTH_RADIUS_M = 6371000;
 
 function toRad(deg) {
